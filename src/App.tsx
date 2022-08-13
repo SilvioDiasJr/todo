@@ -1,9 +1,15 @@
 import React from 'react'
 
+import logo from '@assets/logo.svg'
+
+import styles from './App.module.css'
+
 export const App: React.FC = () => {
   return (
-    <div>
-      <h1>Todo</h1>
+    <div className={styles.container}>
+      <header>
+        <img src={logo} alt="Logo todo-list" />
+      </header>
     </div>
   )
 }
