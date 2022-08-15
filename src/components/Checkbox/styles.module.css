@@ -1,0 +1,48 @@
+.container {
+  width: 1.0906rem;
+  height: 1.0906rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 60%;
+  border: 2px solid var(--blue);
+
+  transition: 0.5s all;
+
+  background-color: transparent;
+}
+
+.container:hover {
+    border-color: var(--blue-dark);
+
+  background-color: var(--blue-dark-opacity);
+}
+
+.container svg {
+  display: none;
+  width: 0.875rem;
+
+  color: var(--gray-100);
+
+  transition: 0.5s all;
+}
+
+.checked {
+  border: 2px solid var(--purple-dark);
+
+  background-color: var(--purple-dark);
+
+  transition: 0.5s all;
+}
+
+.checked svg {
+  display: block;
+}
+
+.checked:hover {
+  border: 2px solid var(--purple);
+
+  background-color: var(--purple);
+}
