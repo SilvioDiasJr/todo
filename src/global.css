@@ -15,6 +15,8 @@
   --gray-700: #0D0D0D;
 
   --danger: #E25858;
+
+  --overlay: rgba(0,0,0,0.2);
 }
 
 * {
@@ -34,4 +36,8 @@ body, button, input {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
+}
+
+button {
+  cursor: pointer;
 }
