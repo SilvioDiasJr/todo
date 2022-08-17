@@ -60,7 +60,13 @@
   line-height: 1.4;
   color: var(--gray-100);
 
+  transition: 0.3s all;
+
   background-color: var(--blue-dark);
+}
+
+.content form button:hover {
+  background-color: var(--blue);
 }
 
 .content form button svg {
