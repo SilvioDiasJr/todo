@@ -3,7 +3,8 @@
   --purple-dark: #5E60CE;
 
   --blue: #4EA8DE;
-  --blue-dark: #1E6F9F;
+  --blue-dark: #1e6f9f;
+  --blue-dark-opacity: rgba(30, 111, 159, 0.2);
 
   --gray-100: #F2F2F2;
   --gray-200: #D9D9D9;
@@ -14,6 +15,8 @@
   --gray-700: #0D0D0D;
 
   --danger: #E25858;
+
+  --overlay: rgba(0,0,0,0.2);
 }
 
 * {
@@ -33,4 +36,8 @@ body, button, input {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
+}
+
+button {
+  cursor: pointer;
 }
