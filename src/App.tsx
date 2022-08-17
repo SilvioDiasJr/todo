@@ -39,6 +39,7 @@ export const App: React.FC = () => {
 
   function handleDeleteTask(value: ITaskDTO) {
     setTasksList(oldState => oldState.filter(item => item.id !== value.id))
+    setCompletedTasks(oldState => oldState.filter(item => item.id !== value.id))
   }
 
   async function handleTaskRegister() {
