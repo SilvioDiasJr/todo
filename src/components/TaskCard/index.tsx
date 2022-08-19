@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { ITaskDTO } from '@dtos/taskDTO'
 
@@ -10,15 +10,17 @@ import styles from './styles.module.css'
 interface Props {
   index: number
   data: ITaskDTO
+  done: boolean
   onCheck(value: ITaskDTO): void
-  onDelete(value: ITaskDTO): void
+  onRefresh(): void
 }
 
 export const TaskCard: React.FC<Props> = ({
   index,
   data,
+  done,
   onCheck,
-  onDelete
+  onRefresh
 }) => {
   const [isCheck, setCheck] = useState<boolean>(false)
 
@@ -27,9 +29,9 @@ export const TaskCard: React.FC<Props> = ({
     onCheck(data)
   }
 
-  function handleTaskDelete() {
-    onDelete(data)
-  }
+  useEffect(() => {
+    setCheck(done)
+  }, [done])
 
   return (
     <div
@@ -40,10 +42,10 @@ export const TaskCard: React.FC<Props> = ({
         <div className={styles.checkbox}>
           <Checkbox checked={isCheck} onClick={handleTaskCheck} />
         </div>
-        <p>{data.value}</p>
+        <p>{data.taskName}</p>
       </div>
 
-      <TaskDeleteDialog onConfirm={handleTaskDelete} />
+      <TaskDeleteDialog taskID={data.id} onConfirm={onRefresh} />
     </div>
   )
 }
