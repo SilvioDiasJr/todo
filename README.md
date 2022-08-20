@@ -18,7 +18,7 @@
 <br/>
 
 <p align="center">
-  <img src="./.github/demonstration.gif" height="500"/>
+  <img src="./.github/todo.gif" height="500"/>
 </p>
 
 ## 🚀 Motivation for development
