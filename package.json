@@ -12,6 +12,7 @@
     "@radix-ui/react-dialog": "^1.0.0",
     "firebase": "^9.9.3",
     "react": "^18.2.0",
+    "react-animated-numbers": "^0.13.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.34.2",
     "react-icons": "^4.4.0",
