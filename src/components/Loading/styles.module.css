@@ -1,0 +1,18 @@
+@keyframes animate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  margin: 0 auto;
+
+  border-radius: 99px;
+  border: 2px solid var(--gray-100);
+  border-top-color: transparent;
+
+  animation: animate linear 1s infinite;
+}

@@ -1,4 +1,6 @@
 export interface ITaskDTO {
   id: string
-  value: string
+  taskName: string
+  done: boolean
+  createdAt: Date
 }
